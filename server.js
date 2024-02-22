@@ -37,7 +37,7 @@ app.get('/todos',(req,res) => {
     })
     .catch(e => console.log(e))
 })
-
+// change
 app.post('/deleteItem',(req,res) => {
     console.log(req.body);
     Todo.findByIdAndDelete(req.body._id)
